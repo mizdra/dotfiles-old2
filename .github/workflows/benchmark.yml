@@ -49,4 +49,4 @@ jobs:
         comment-on-alert: true
         fail-on-alert: true
         alert-threshold: '150%'
-        alert-comment-cc-users: '@odanado'
+        alert-comment-cc-users: '@mizdra'
