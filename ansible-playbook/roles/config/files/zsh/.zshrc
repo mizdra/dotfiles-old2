@@ -7,7 +7,7 @@ include () {
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-eval "$(sheldon --quiet source)"
+eval "$(sheldon source)"
 
 autoload -U compinit && compinit
 
