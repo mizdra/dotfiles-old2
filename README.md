@@ -14,6 +14,7 @@ $ ./setup.sh
 - [Homebrew](https://brew.sh/index_ja)
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - Rosetta 2
+- SSH key registered on GitHub
 
 ```console
 $ xcode-select --install
@@ -24,6 +25,8 @@ $ eval "$(/opt/homebrew/bin/brew shellenv)"
 $ brew install ansible
 
 $ sudo softwareupdate --install-rosetta
+
+$ ssh-keygen -t ed25519 -C "mizdra@mizdra-mbp2021"
 
 $ ./setup.sh
 ```
