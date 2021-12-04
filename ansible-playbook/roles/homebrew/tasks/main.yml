@@ -6,3 +6,7 @@
 - name: Run brew bundle
   shell: brew bundle --file {{ role_path }}/files/Brewfile
   changed_when: false
+
+- name: Setup anyenv
+  shell: anyenv install --init
+  changed_when: false
