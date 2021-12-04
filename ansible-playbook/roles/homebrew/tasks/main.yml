@@ -8,5 +8,5 @@
   changed_when: false
 
 - name: Setup anyenv
-  shell: anyenv install --init
+  shell: yes | anyenv install --init
   changed_when: false
