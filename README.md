@@ -9,6 +9,24 @@ $ cd dotfiles
 $ ./setup.sh
 ```
 
+## Requirements
+- Xcode Command Line Tools
+- [Homebrew](https://brew.sh/index_ja)
+- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+- Rosetta 2
+
+```console
+$ xcode-select --install
+
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ eval "$(/opt/homebrew/bin/brew shellenv)"
+
+$ brew install ansible
+
+$ sudo softwareupdate --install-rosetta
+
+$ ./setup.sh
+```
 
 ## Benchmark
 See: https://mizdra.github.io/dotfiles/dev/bench/
