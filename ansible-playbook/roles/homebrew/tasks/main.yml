@@ -14,3 +14,9 @@
   args:
     # 既に ricty のフォントがコピーされていたらタスクをスキップ
     creates: ~/Library/Fonts/Ricty-Bold.ttf
+
+- name: Initialize anyenv
+  shell: anyenv install --init
+  args:
+    # 既に anyenv のディレクトリが生成されていたらタスクをスキップ
+    creates: ~/.config/anyenv/anyenv-install
