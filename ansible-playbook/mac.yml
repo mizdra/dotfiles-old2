@@ -5,3 +5,5 @@
     - homebrew
     - config
     - dotfiles
+    - bin
+    - iterm2

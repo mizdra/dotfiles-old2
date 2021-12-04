@@ -6,3 +6,17 @@
 - name: Run brew bundle
   shell: brew bundle --file {{ role_path }}/files/Brewfile
   changed_when: false
+
+- name: Copy ricty font files
+  shell: >
+    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts/;
+    fc-cache -vf
+  args:
+    # 既に ricty のフォントがコピーされていたらタスクをスキップ
+    creates: ~/Library/Fonts/Ricty-Bold.ttf
+
+- name: Initialize anyenv
+  shell: anyenv install --init
+  args:
+    # 既に anyenv のディレクトリが生成されていたらタスクをスキップ
+    creates: ~/.config/anyenv/anyenv-install

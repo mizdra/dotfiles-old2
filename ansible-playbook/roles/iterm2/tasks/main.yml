@@ -1,0 +1,10 @@
+- name: Make DynamicProfiles directory
+  file:
+    path: ~/Library/Application\ Support/iTerm2/DynamicProfiles
+    state: directory
+
+- name: Link profiles file
+  file:
+    src: "{{ role_path }}/files/Profiles.json"
+    dest: "~/Library/Application\ Support/iTerm2/DynamicProfiles/Profiles.json"
+    state: link
