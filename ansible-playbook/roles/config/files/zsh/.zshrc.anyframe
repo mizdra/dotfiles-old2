@@ -1,8 +1,8 @@
 # anyframe setting
 bindkey '^r' anyframe-widget-put-history
 bindkey '^a^f' anyframe-widget-insert-filename
-bindkey '^a^b' anyframe-widget-insert-git-branch
-bindkey '^a^g' anyframe-widget-cd-ghq-repository
+bindkey '^b' anyframe-widget-insert-git-branch
+bindkey '^s' anyframe-widget-cd-ghq-repository
 bindkey '^a^x' anyframe-widget-execute-history
 bindkey '^a^c' anyframe-widget-checkout-git-branch
 
