@@ -25,6 +25,10 @@ setopt share_history # ヒストリを共有
 setopt ignore_eof # Ctrl+Dでzshを終了しない
 setopt auto_cd # ディレクトリ名だけでcdする
 
+# ghq の keybind と競合するため、^s / ^q で画面出力の一時停止/再開をする keybind を無効化
+stty stop undef
+stty start undef
+
 # ls に色をつける
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 alias ls="ls -G"
