@@ -27,6 +27,8 @@ $ brew install ansible
 $ sudo softwareupdate --install-rosetta
 
 $ ssh-keygen -t ed25519 -C "mizdra@mizdra-mbp2021"
+$ # Option (for VSCode devcontainer)
+$ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
 $ ./setup.sh
 ```
